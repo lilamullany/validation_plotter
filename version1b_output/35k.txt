@@ -1,0 +1,1031 @@
+INFO::loss = 3.3681123, step = 35000
+INFO::loss = 2.169259, step = 35100 (93.829 sec)
+INFO::loss = 3.3477058, step = 35200 (89.695 sec)
+INFO::loss = 1.9212078, step = 35300 (89.195 sec)
+INFO::loss = 3.4423876, step = 35400 (86.544 sec)
+INFO::loss = 3.4013052, step = 35500 (88.779 sec)
+INFO::loss = 2.5090742, step = 35600 (86.160 sec)
+2020-07-16 05:44:44.594359: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:44:44.594995: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 05:44:44.595076: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 05:44:44.595117: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 05:44:44.595154: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 05:44:44.595191: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 05:44:44.595227: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 05:44:44.595256: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 05:44:44.595293: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 05:44:44.595416: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:44:44.595982: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:44:44.596435: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 05:44:44.596483: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 05:44:44.596502: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 05:44:44.596513: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 05:44:44.596656: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:44:44.597190: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:44:44.597677: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.80s).
+Accumulating evaluation results...
+DONE (t=2.01s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.597
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.851
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.687
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.023
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.603
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.492
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.687
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.699
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.045
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.708
+INFO::Saving dict for global step 35658: DetectionBoxes_Precision/mAP = 0.597211, DetectionBoxes_Precision/mAP (large) = 0.60295177, DetectionBoxes_Precision/mAP (medium) = 0.022791123, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.8506786, DetectionBoxes_Precision/mAP@.75IOU = 0.68705416, DetectionBoxes_Recall/AR@1 = 0.49192414, DetectionBoxes_Recall/AR@10 = 0.6872014, DetectionBoxes_Recall/AR@100 = 0.6987871, DetectionBoxes_Recall/AR@100 (large) = 0.70797867, DetectionBoxes_Recall/AR@100 (medium) = 0.044666667, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 2.5429573, Loss/localization_loss = 0.33898196, Loss/regularization_loss = 0.45406505, Loss/total_loss = 3.3360057, global_step = 35658, learning_rate = 0.008573749, loss = 3.3360057
+INFO::loss = 2.6888683, step = 35700 (300.298 sec)
+INFO::loss = 2.780426, step = 35800 (90.128 sec)
+INFO::loss = 2.4058354, step = 35900 (87.368 sec)
+INFO::loss = 2.9957092, step = 36000 (87.109 sec)
+2020-07-16 05:54:45.244589: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:54:45.245167: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 05:54:45.245255: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 05:54:45.245293: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 05:54:45.245320: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 05:54:45.245347: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 05:54:45.245375: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 05:54:45.245403: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 05:54:45.245439: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 05:54:45.245528: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:54:45.246050: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:54:45.246515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 05:54:45.246602: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 05:54:45.246624: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 05:54:45.246644: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 05:54:45.246792: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:54:45.247338: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 05:54:45.247815: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.88s).
+Accumulating evaluation results...
+DONE (t=1.99s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.667
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.926
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.761
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.041
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.674
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.526
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.725
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.735
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.096
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.743
+INFO::Saving dict for global step 36098: DetectionBoxes_Precision/mAP = 0.6666218, DetectionBoxes_Precision/mAP (large) = 0.6739088, DetectionBoxes_Precision/mAP (medium) = 0.041329708, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.92555094, DetectionBoxes_Precision/mAP@.75IOU = 0.7606087, DetectionBoxes_Recall/AR@1 = 0.5259272, DetectionBoxes_Recall/AR@10 = 0.7253975, DetectionBoxes_Recall/AR@100 = 0.7349838, DetectionBoxes_Recall/AR@100 (large) = 0.74330217, DetectionBoxes_Recall/AR@100 (medium) = 0.096, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.5167989, Loss/localization_loss = 0.22778083, Loss/regularization_loss = 0.4544126, Loss/total_loss = 2.1990013, global_step = 36098, learning_rate = 0.008573749, loss = 2.1990013
+INFO::loss = 2.483839, step = 36100 (305.842 sec)
+INFO::loss = 2.3031712, step = 36200 (85.942 sec)
+INFO::loss = 2.3794084, step = 36300 (83.761 sec)
+INFO::loss = 2.4722104, step = 36400 (85.372 sec)
+INFO::loss = 2.8557827, step = 36500 (87.479 sec)
+2020-07-16 06:04:45.400918: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:04:45.401511: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:04:45.401584: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:04:45.401623: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:04:45.401654: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:04:45.401689: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:04:45.401720: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:04:45.401751: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:04:45.401782: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:04:45.401884: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:04:45.402439: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:04:45.402925: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:04:45.402979: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:04:45.402999: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:04:45.403010: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:04:45.403145: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:04:45.403670: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:04:45.404162: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.95s).
+Accumulating evaluation results...
+DONE (t=1.95s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.665
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.931
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.769
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.094
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.672
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.729
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.738
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.209
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.745
+INFO::Saving dict for global step 36545: DetectionBoxes_Precision/mAP = 0.6653749, DetectionBoxes_Precision/mAP (large) = 0.6722087, DetectionBoxes_Precision/mAP (medium) = 0.0937498, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9310278, DetectionBoxes_Precision/mAP@.75IOU = 0.7687796, DetectionBoxes_Recall/AR@1 = 0.5282109, DetectionBoxes_Recall/AR@10 = 0.7288289, DetectionBoxes_Recall/AR@100 = 0.7380267, DetectionBoxes_Recall/AR@100 (large) = 0.74527776, DetectionBoxes_Recall/AR@100 (medium) = 0.20933333, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.4981563, Loss/localization_loss = 0.2232629, Loss/regularization_loss = 0.45473158, Loss/total_loss = 2.176152, global_step = 36545, learning_rate = 0.008573749, loss = 2.176152
+INFO::loss = 2.6242285, step = 36600 (298.411 sec)
+INFO::loss = 2.337163, step = 36700 (86.335 sec)
+INFO::loss = 2.7212443, step = 36800 (84.994 sec)
+INFO::loss = 2.9190996, step = 36900 (85.490 sec)
+2020-07-16 06:14:45.195104: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:14:45.195692: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:14:45.195767: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:14:45.195806: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:14:45.195842: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:14:45.195877: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:14:45.195906: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:14:45.195938: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:14:45.195972: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:14:45.196078: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:14:45.196596: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:14:45.197046: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:14:45.197096: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:14:45.197115: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:14:45.197126: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:14:45.197273: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:14:45.197804: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:14:45.198278: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.83s).
+Accumulating evaluation results...
+DONE (t=1.94s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.662
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.923
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.772
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.075
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.669
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.521
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.729
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.739
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.209
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.746
+INFO::Saving dict for global step 36998: DetectionBoxes_Precision/mAP = 0.6620854, DetectionBoxes_Precision/mAP (large) = 0.6688573, DetectionBoxes_Precision/mAP (medium) = 0.0749134, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.92345035, DetectionBoxes_Precision/mAP@.75IOU = 0.7721559, DetectionBoxes_Recall/AR@1 = 0.52133006, DetectionBoxes_Recall/AR@10 = 0.7291814, DetectionBoxes_Recall/AR@100 = 0.73907804, DetectionBoxes_Recall/AR@100 (large) = 0.7460624, DetectionBoxes_Recall/AR@100 (medium) = 0.20933333, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.624345, Loss/localization_loss = 0.2292543, Loss/regularization_loss = 0.45503584, Loss/total_loss = 2.3086326, global_step = 36998, learning_rate = 0.008573749, loss = 2.3086326
+INFO::loss = 2.417924, step = 37000 (295.116 sec)
+INFO::loss = 3.4042768, step = 37100 (84.210 sec)
+INFO::loss = 1.7951863, step = 37200 (84.373 sec)
+INFO::loss = 3.0866435, step = 37300 (88.878 sec)
+INFO::loss = 2.6448653, step = 37400 (86.317 sec)
+2020-07-16 06:24:45.933977: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:24:45.934614: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:24:45.934695: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:24:45.934730: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:24:45.934760: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:24:45.934795: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:24:45.934831: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:24:45.934866: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:24:45.934896: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:24:45.934995: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:24:45.935567: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:24:45.936032: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:24:45.936083: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:24:45.936105: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:24:45.936121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:24:45.936274: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:24:45.936836: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:24:45.937318: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.16s).
+Accumulating evaluation results...
+DONE (t=2.00s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.659
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.922
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.776
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.065
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.667
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.518
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.731
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.740
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.137
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.750
+INFO::Saving dict for global step 37451: DetectionBoxes_Precision/mAP = 0.6590086, DetectionBoxes_Precision/mAP (large) = 0.66674596, DetectionBoxes_Precision/mAP (medium) = 0.06491712, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.92175215, DetectionBoxes_Precision/mAP@.75IOU = 0.77609694, DetectionBoxes_Recall/AR@1 = 0.51770014, DetectionBoxes_Recall/AR@10 = 0.73075366, DetectionBoxes_Recall/AR@100 = 0.7404948, DetectionBoxes_Recall/AR@100 (large) = 0.7496854, DetectionBoxes_Recall/AR@100 (medium) = 0.13733333, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.7311178, Loss/localization_loss = 0.23205818, Loss/regularization_loss = 0.45526084, Loss/total_loss = 2.4184337, global_step = 37451, learning_rate = 0.008573749, loss = 2.4184337
+INFO::loss = 2.7762988, step = 37500 (300.067 sec)
+INFO::loss = 3.4083495, step = 37600 (82.721 sec)
+INFO::loss = 1.9030981, step = 37700 (83.185 sec)
+INFO::loss = 2.778902, step = 37800 (84.752 sec)
+INFO::loss = 3.1617355, step = 37900 (84.218 sec)
+2020-07-16 06:34:46.456859: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:34:46.457441: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:34:46.457532: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:34:46.457573: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:34:46.457610: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:34:46.457645: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:34:46.457680: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:34:46.457716: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:34:46.457749: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:34:46.457848: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:34:46.458396: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:34:46.458887: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:34:46.458940: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:34:46.458964: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:34:46.458986: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:34:46.459122: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:34:46.459672: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:34:46.460149: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.52s).
+Accumulating evaluation results...
+DONE (t=2.05s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.656
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.913
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.759
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.132
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.662
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.522
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.730
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.738
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.147
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.746
+INFO::Saving dict for global step 37911: DetectionBoxes_Precision/mAP = 0.6558274, DetectionBoxes_Precision/mAP (large) = 0.66205215, DetectionBoxes_Precision/mAP (medium) = 0.1317263, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9126905, DetectionBoxes_Precision/mAP@.75IOU = 0.7587867, DetectionBoxes_Recall/AR@1 = 0.52153486, DetectionBoxes_Recall/AR@10 = 0.72971565, DetectionBoxes_Recall/AR@100 = 0.73817986, DetectionBoxes_Recall/AR@100 (large) = 0.7463935, DetectionBoxes_Recall/AR@100 (medium) = 0.14666666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.7165624, Loss/localization_loss = 0.22766215, Loss/regularization_loss = 0.4555895, Loss/total_loss = 2.3998165, global_step = 37911, learning_rate = 0.008573749, loss = 2.3998165
+INFO::loss = 2.1675718, step = 38000 (297.302 sec)
+INFO::loss = 1.892211, step = 38100 (85.746 sec)
+INFO::loss = 2.9521003, step = 38200 (86.109 sec)
+INFO::loss = 3.05126, step = 38300 (84.089 sec)
+2020-07-16 06:44:46.397236: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:44:46.397827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:44:46.397934: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:44:46.397968: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:44:46.398003: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:44:46.398041: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:44:46.398074: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:44:46.398107: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:44:46.398140: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:44:46.398239: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:44:46.398815: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:44:46.399298: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:44:46.399351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:44:46.399372: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:44:46.399394: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:44:46.399545: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:44:46.400091: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:44:46.400583: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.09s).
+Accumulating evaluation results...
+DONE (t=1.96s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.619
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.869
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.713
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.123
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.626
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.507
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.706
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.716
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.164
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.724
+INFO::Saving dict for global step 38367: DetectionBoxes_Precision/mAP = 0.61931634, DetectionBoxes_Precision/mAP (large) = 0.6257429, DetectionBoxes_Precision/mAP (medium) = 0.12306333, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.8692159, DetectionBoxes_Precision/mAP@.75IOU = 0.7134707, DetectionBoxes_Recall/AR@1 = 0.50746524, DetectionBoxes_Recall/AR@10 = 0.7064794, DetectionBoxes_Recall/AR@100 = 0.7164892, DetectionBoxes_Recall/AR@100 (large) = 0.7244619, DetectionBoxes_Recall/AR@100 (medium) = 0.164, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 2.324093, Loss/localization_loss = 0.27524605, Loss/regularization_loss = 0.4558519, Loss/total_loss = 3.0551915, global_step = 38367, learning_rate = 0.008573749, loss = 3.0551915
+INFO::loss = 2.7318008, step = 38400 (295.718 sec)
+INFO::loss = 2.9037926, step = 38500 (85.961 sec)
+INFO::loss = 2.5664446, step = 38600 (83.992 sec)
+INFO::loss = 2.7196014, step = 38700 (84.689 sec)
+INFO::loss = 1.9168468, step = 38800 (85.775 sec)
+2020-07-16 06:54:46.640719: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:54:46.641304: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 06:54:46.641376: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 06:54:46.641410: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 06:54:46.641446: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 06:54:46.641479: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 06:54:46.641513: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 06:54:46.641543: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 06:54:46.641567: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 06:54:46.641666: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:54:46.642204: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:54:46.642686: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 06:54:46.642738: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 06:54:46.642762: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 06:54:46.642788: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 06:54:46.642939: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:54:46.643502: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 06:54:46.643962: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=10.08s).
+Accumulating evaluation results...
+DONE (t=1.98s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.656
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.913
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.753
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.126
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.663
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.520
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.722
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.732
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.197
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.740
+INFO::Saving dict for global step 38823: DetectionBoxes_Precision/mAP = 0.656314, DetectionBoxes_Precision/mAP (large) = 0.66265374, DetectionBoxes_Precision/mAP (medium) = 0.12637234, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.913446, DetectionBoxes_Precision/mAP@.75IOU = 0.75292647, DetectionBoxes_Recall/AR@1 = 0.5199694, DetectionBoxes_Recall/AR@10 = 0.7221169, DetectionBoxes_Recall/AR@100 = 0.7324743, DetectionBoxes_Recall/AR@100 (large) = 0.7403556, DetectionBoxes_Recall/AR@100 (medium) = 0.19733334, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.7095814, Loss/localization_loss = 0.24059851, Loss/regularization_loss = 0.45615232, Loss/total_loss = 2.4063256, global_step = 38823, learning_rate = 0.008573749, loss = 2.4063256
+INFO::loss = 2.7496622, step = 38900 (297.936 sec)
+INFO::loss = 2.5090718, step = 39000 (87.593 sec)
+INFO::loss = 2.8116724, step = 39100 (83.663 sec)
+INFO::loss = 2.141179, step = 39200 (86.274 sec)
+2020-07-16 07:04:47.236103: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:04:47.236676: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:04:47.236758: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:04:47.236792: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:04:47.236823: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:04:47.236857: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:04:47.236888: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:04:47.236918: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:04:47.236954: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:04:47.237055: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:04:47.237577: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:04:47.238030: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:04:47.238081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:04:47.238104: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:04:47.238121: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:04:47.238278: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:04:47.238836: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:04:47.239322: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=10.31s).
+Accumulating evaluation results...
+DONE (t=1.92s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.626
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.897
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.724
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.178
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.632
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.496
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.702
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.712
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.191
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.721
+INFO::Saving dict for global step 39278: DetectionBoxes_Precision/mAP = 0.62597054, DetectionBoxes_Precision/mAP (large) = 0.63239866, DetectionBoxes_Precision/mAP (medium) = 0.17822349, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.89704376, DetectionBoxes_Precision/mAP@.75IOU = 0.72363186, DetectionBoxes_Recall/AR@1 = 0.49564424, DetectionBoxes_Recall/AR@10 = 0.7018882, DetectionBoxes_Recall/AR@100 = 0.7124607, DetectionBoxes_Recall/AR@100 (large) = 0.720669, DetectionBoxes_Recall/AR@100 (medium) = 0.19066666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.8309432, Loss/localization_loss = 0.26601937, Loss/regularization_loss = 0.45636454, Loss/total_loss = 2.5533326, global_step = 39278, learning_rate = 0.008573749, loss = 2.5533326
+INFO::loss = 1.6173763, step = 39300 (294.971 sec)
+INFO::loss = 2.7377684, step = 39400 (84.099 sec)
+INFO::loss = 3.0834231, step = 39500 (83.466 sec)
+INFO::loss = 2.221781, step = 39600 (85.288 sec)
+INFO::loss = 2.4610775, step = 39700 (85.152 sec)
+2020-07-16 07:14:47.484892: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:14:47.485488: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:14:47.485566: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:14:47.485604: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:14:47.485636: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:14:47.485673: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:14:47.485709: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:14:47.485738: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:14:47.485772: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:14:47.485886: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:14:47.486433: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:14:47.486936: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:14:47.486988: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:14:47.487012: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:14:47.487024: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:14:47.487187: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:14:47.487731: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:14:47.488201: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=10.07s).
+Accumulating evaluation results...
+DONE (t=1.92s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.628
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.891
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.723
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.034
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.634
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.509
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.704
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.714
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.039
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.724
+INFO::Saving dict for global step 39739: DetectionBoxes_Precision/mAP = 0.6276656, DetectionBoxes_Precision/mAP (large) = 0.63446033, DetectionBoxes_Precision/mAP (medium) = 0.03350113, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.89146256, DetectionBoxes_Precision/mAP@.75IOU = 0.72305983, DetectionBoxes_Recall/AR@1 = 0.5089888, DetectionBoxes_Recall/AR@10 = 0.7039326, DetectionBoxes_Recall/AR@100 = 0.71446174, DetectionBoxes_Recall/AR@100 (large) = 0.7244281, DetectionBoxes_Recall/AR@100 (medium) = 0.038666666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.9537864, Loss/localization_loss = 0.27271435, Loss/regularization_loss = 0.45660412, Loss/total_loss = 2.6831071, global_step = 39739, learning_rate = 0.008573749, loss = 2.6831071
+INFO::loss = 2.3988583, step = 39800 (293.029 sec)
+INFO::loss = 2.4150844, step = 39900 (84.733 sec)
+INFO::loss = 2.7298136, step = 40000 (84.373 sec)
+INFO::loss = 3.3717825, step = 40100 (88.579 sec)
+2020-07-16 07:24:47.647519: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:24:47.648132: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:24:47.648214: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:24:47.648247: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:24:47.648280: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:24:47.648312: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:24:47.648348: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:24:47.648380: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:24:47.648409: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:24:47.648501: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:24:47.649042: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:24:47.649514: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:24:47.649563: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:24:47.649577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:24:47.649593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:24:47.649746: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:24:47.650303: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:24:47.650792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.72s).
+Accumulating evaluation results...
+DONE (t=1.94s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.651
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.899
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.749
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.046
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.658
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.521
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.727
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.736
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.119
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.746
+INFO::Saving dict for global step 40200: DetectionBoxes_Precision/mAP = 0.6509641, DetectionBoxes_Precision/mAP (large) = 0.6581098, DetectionBoxes_Precision/mAP (medium) = 0.04597132, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.89865196, DetectionBoxes_Precision/mAP@.75IOU = 0.7490626, DetectionBoxes_Recall/AR@1 = 0.5213926, DetectionBoxes_Recall/AR@10 = 0.7272017, DetectionBoxes_Recall/AR@100 = 0.73608345, DetectionBoxes_Recall/AR@100 (large) = 0.745883, DetectionBoxes_Recall/AR@100 (medium) = 0.118666664, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.8223909, Loss/localization_loss = 0.22154777, Loss/regularization_loss = 0.456915, Loss/total_loss = 2.5008597, global_step = 40200, learning_rate = 0.008145061, loss = 2.5008597
+INFO::loss = 2.3168325, step = 40200 (295.353 sec)
+INFO::loss = 2.698975, step = 40300 (86.299 sec)
+INFO::loss = 2.605321, step = 40400 (84.763 sec)
+INFO::loss = 2.7007217, step = 40500 (84.910 sec)
+INFO::loss = 2.1119406, step = 40600 (88.201 sec)
+2020-07-16 07:34:48.791342: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:34:48.791957: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:34:48.792040: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:34:48.792081: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:34:48.792117: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:34:48.792154: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:34:48.792182: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:34:48.792206: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:34:48.792238: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:34:48.792364: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:34:48.792932: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:34:48.793387: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:34:48.793440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:34:48.793464: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:34:48.793485: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:34:48.793638: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:34:48.794178: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:34:48.794666: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.03s).
+Accumulating evaluation results...
+DONE (t=1.97s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.647
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.911
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.740
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.076
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.652
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.513
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.718
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.728
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.085
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.736
+INFO::Saving dict for global step 40652: DetectionBoxes_Precision/mAP = 0.64685667, DetectionBoxes_Precision/mAP (large) = 0.6519462, DetectionBoxes_Precision/mAP (medium) = 0.07615752, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.91069245, DetectionBoxes_Precision/mAP@.75IOU = 0.7403146, DetectionBoxes_Recall/AR@1 = 0.5133638, DetectionBoxes_Recall/AR@10 = 0.7182345, DetectionBoxes_Recall/AR@100 = 0.7275033, DetectionBoxes_Recall/AR@100 (large) = 0.7357222, DetectionBoxes_Recall/AR@100 (medium) = 0.08466667, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.6866744, Loss/localization_loss = 0.23714148, Loss/regularization_loss = 0.45707273, Loss/total_loss = 2.38089, global_step = 40652, learning_rate = 0.008145061, loss = 2.38089
+INFO::loss = 2.2239108, step = 40700 (298.301 sec)
+INFO::loss = 2.6538618, step = 40800 (85.233 sec)
+INFO::loss = 3.2634182, step = 40900 (83.973 sec)
+INFO::loss = 2.1240997, step = 41000 (84.217 sec)
+INFO::loss = 3.8348362, step = 41100 (86.351 sec)
+2020-07-16 07:44:49.126876: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:44:49.127444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:44:49.127512: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:44:49.127547: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:44:49.127578: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:44:49.127613: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:44:49.127645: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:44:49.127674: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:44:49.127707: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:44:49.127811: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:44:49.128360: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:44:49.128810: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:44:49.128861: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:44:49.128886: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:44:49.128905: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:44:49.129060: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:44:49.129581: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:44:49.130061: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.46s).
+Accumulating evaluation results...
+DONE (t=1.94s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.684
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.934
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.784
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.048
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.690
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.536
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.741
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.751
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.073
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.758
+INFO::Saving dict for global step 41108: DetectionBoxes_Precision/mAP = 0.683993, DetectionBoxes_Precision/mAP (large) = 0.69015706, DetectionBoxes_Precision/mAP (medium) = 0.048445977, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9340011, DetectionBoxes_Precision/mAP@.75IOU = 0.784229, DetectionBoxes_Recall/AR@1 = 0.5355814, DetectionBoxes_Recall/AR@10 = 0.7412925, DetectionBoxes_Recall/AR@100 = 0.75104713, DetectionBoxes_Recall/AR@100 (large) = 0.75802094, DetectionBoxes_Recall/AR@100 (medium) = 0.07333333, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.450184, Loss/localization_loss = 0.20995444, Loss/regularization_loss = 0.4572753, Loss/total_loss = 2.1174116, global_step = 41108, learning_rate = 0.008145061, loss = 2.1174116
+INFO::loss = 2.1593363, step = 41200 (296.507 sec)
+INFO::loss = 4.2343225, step = 41300 (86.808 sec)
+INFO::loss = 3.4314969, step = 41400 (83.953 sec)
+INFO::loss = 2.6005235, step = 41500 (84.289 sec)
+2020-07-16 07:54:49.374775: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:54:49.375349: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 07:54:49.375422: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 07:54:49.375456: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 07:54:49.375493: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 07:54:49.375530: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 07:54:49.375562: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 07:54:49.375592: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 07:54:49.375630: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 07:54:49.375738: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:54:49.376299: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:54:49.376758: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 07:54:49.376808: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 07:54:49.376827: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 07:54:49.376844: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 07:54:49.376978: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:54:49.377509: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 07:54:49.377975: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.64s).
+Accumulating evaluation results...
+DONE (t=1.93s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.674
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.929
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.774
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.147
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.679
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.535
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.740
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.749
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.163
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.756
+INFO::Saving dict for global step 41564: DetectionBoxes_Precision/mAP = 0.673776, DetectionBoxes_Precision/mAP (large) = 0.679326, DetectionBoxes_Precision/mAP (medium) = 0.14704314, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.92890877, DetectionBoxes_Precision/mAP@.75IOU = 0.7744351, DetectionBoxes_Recall/AR@1 = 0.53465796, DetectionBoxes_Recall/AR@10 = 0.74009246, DetectionBoxes_Recall/AR@100 = 0.74897796, DetectionBoxes_Recall/AR@100 (large) = 0.7562918, DetectionBoxes_Recall/AR@100 (medium) = 0.16266666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.4073594, Loss/localization_loss = 0.21292709, Loss/regularization_loss = 0.4574162, Loss/total_loss = 2.077705, global_step = 41564, learning_rate = 0.008145061, loss = 2.077705
+INFO::loss = 3.1172123, step = 41600 (297.907 sec)
+INFO::loss = 2.601831, step = 41700 (87.973 sec)
+INFO::loss = 2.8982139, step = 41800 (85.373 sec)
+INFO::loss = 3.1876907, step = 41900 (85.507 sec)
+INFO::loss = 2.9474878, step = 42000 (86.435 sec)
+2020-07-16 08:04:49.531619: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:04:49.532247: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:04:49.532313: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:04:49.532347: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:04:49.532378: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:04:49.532410: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:04:49.532440: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:04:49.532470: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:04:49.532497: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:04:49.532605: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:04:49.533181: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:04:49.533653: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:04:49.533705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:04:49.533726: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:04:49.533749: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:04:49.533908: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:04:49.534602: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:04:49.535081: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.89s).
+Accumulating evaluation results...
+DONE (t=1.90s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.669
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.931
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.771
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.051
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.676
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.525
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.733
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.741
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.079
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.750
+INFO::Saving dict for global step 42015: DetectionBoxes_Precision/mAP = 0.6686516, DetectionBoxes_Precision/mAP (large) = 0.67625326, DetectionBoxes_Precision/mAP (medium) = 0.05071283, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9314233, DetectionBoxes_Precision/mAP@.75IOU = 0.7708244, DetectionBoxes_Recall/AR@1 = 0.52535397, DetectionBoxes_Recall/AR@10 = 0.73334223, DetectionBoxes_Recall/AR@100 = 0.74147433, DetectionBoxes_Recall/AR@100 (large) = 0.7499697, DetectionBoxes_Recall/AR@100 (medium) = 0.079333335, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.6425874, Loss/localization_loss = 0.2169948, Loss/regularization_loss = 0.457561, Loss/total_loss = 2.3171413, global_step = 42015, learning_rate = 0.008145061, loss = 2.3171413
+INFO::loss = 1.7778053, step = 42100 (297.795 sec)
+INFO::loss = 2.0291078, step = 42200 (85.060 sec)
+INFO::loss = 2.868757, step = 42300 (86.888 sec)
+INFO::loss = 2.8096519, step = 42400 (86.663 sec)
+2020-07-16 08:14:49.618676: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:14:49.619256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:14:49.619341: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:14:49.619380: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:14:49.619419: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:14:49.619456: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:14:49.619494: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:14:49.619526: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:14:49.619560: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:14:49.619656: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:14:49.620173: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:14:49.620631: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:14:49.620681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:14:49.620705: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:14:49.620717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:14:49.620875: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:14:49.621390: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:14:49.621870: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=10.11s).
+Accumulating evaluation results...
+DONE (t=1.91s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.620
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.890
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.694
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.068
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.627
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.499
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.699
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.711
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.081
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.720
+INFO::Saving dict for global step 42466: DetectionBoxes_Precision/mAP = 0.6196545, DetectionBoxes_Precision/mAP (large) = 0.62729365, DetectionBoxes_Precision/mAP (medium) = 0.067716755, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.8895105, DetectionBoxes_Precision/mAP@.75IOU = 0.69387794, DetectionBoxes_Recall/AR@1 = 0.49866372, DetectionBoxes_Recall/AR@10 = 0.6992503, DetectionBoxes_Recall/AR@100 = 0.7105465, DetectionBoxes_Recall/AR@100 (large) = 0.71979827, DetectionBoxes_Recall/AR@100 (medium) = 0.08133333, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.9743776, Loss/localization_loss = 0.28793627, Loss/regularization_loss = 0.45770255, Loss/total_loss = 2.7200196, global_step = 42466, learning_rate = 0.008145061, loss = 2.7200196
+INFO::loss = 1.9799662, step = 42500 (300.760 sec)
+INFO::loss = 2.5894158, step = 42600 (85.001 sec)
+INFO::loss = 2.2091498, step = 42700 (87.205 sec)
+INFO::loss = 1.8656788, step = 42800 (87.436 sec)
+INFO::loss = 3.3886862, step = 42900 (86.283 sec)
+2020-07-16 08:24:49.817859: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:24:49.818440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:24:49.818529: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:24:49.818589: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:24:49.818621: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:24:49.818651: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:24:49.818680: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:24:49.818707: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:24:49.818746: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:24:49.818851: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:24:49.819372: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:24:49.819820: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:24:49.819873: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:24:49.819894: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:24:49.819906: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:24:49.820062: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:24:49.820586: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:24:49.821043: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.90s).
+Accumulating evaluation results...
+DONE (t=1.99s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.660
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.921
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.756
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.110
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.668
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.525
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.724
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.736
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.139
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.743
+INFO::Saving dict for global step 42910: DetectionBoxes_Precision/mAP = 0.6597908, DetectionBoxes_Precision/mAP (large) = 0.6678638, DetectionBoxes_Precision/mAP (medium) = 0.11033064, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9213834, DetectionBoxes_Precision/mAP@.75IOU = 0.75629246, DetectionBoxes_Recall/AR@1 = 0.5248725, DetectionBoxes_Recall/AR@10 = 0.72440046, DetectionBoxes_Recall/AR@100 = 0.73590195, DetectionBoxes_Recall/AR@100 (large) = 0.74349993, DetectionBoxes_Recall/AR@100 (medium) = 0.13866666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.6041728, Loss/localization_loss = 0.23539922, Loss/regularization_loss = 0.45784456, Loss/total_loss = 2.2974188, global_step = 42910, learning_rate = 0.008145061, loss = 2.2974188
+INFO::loss = 3.8472173, step = 43000 (300.048 sec)
+INFO::loss = 2.9262953, step = 43100 (87.213 sec)
+INFO::loss = 1.9193975, step = 43200 (84.527 sec)
+INFO::loss = 2.540371, step = 43300 (84.518 sec)
+2020-07-16 08:34:50.024101: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:34:50.024715: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:34:50.024800: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:34:50.024841: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:34:50.024875: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:34:50.024916: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:34:50.024953: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:34:50.024982: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:34:50.025015: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:34:50.025126: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:34:50.025682: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:34:50.026150: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:34:50.026204: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:34:50.026229: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:34:50.026252: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:34:50.026412: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:34:50.026994: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:34:50.027490: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=10.23s).
+Accumulating evaluation results...
+DONE (t=1.90s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.651
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.908
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.752
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.131
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.658
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.518
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.720
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.731
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.151
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.739
+INFO::Saving dict for global step 43361: DetectionBoxes_Precision/mAP = 0.65060586, DetectionBoxes_Precision/mAP (large) = 0.65809125, DetectionBoxes_Precision/mAP (medium) = 0.13104764, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9084922, DetectionBoxes_Precision/mAP@.75IOU = 0.75159335, DetectionBoxes_Recall/AR@1 = 0.51794285, DetectionBoxes_Recall/AR@10 = 0.7203213, DetectionBoxes_Recall/AR@100 = 0.7307003, DetectionBoxes_Recall/AR@100 (large) = 0.7389354, DetectionBoxes_Recall/AR@100 (medium) = 0.15066667, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 2.1011992, Loss/localization_loss = 0.25584033, Loss/regularization_loss = 0.45798826, Loss/total_loss = 2.8150291, global_step = 43361, learning_rate = 0.008145061, loss = 2.8150291
+INFO::loss = 2.557683, step = 43400 (301.253 sec)
+INFO::loss = 1.9470176, step = 43500 (84.756 sec)
+INFO::loss = 2.815642, step = 43600 (86.256 sec)
+INFO::loss = 2.2906587, step = 43700 (87.182 sec)
+INFO::loss = 2.9008417, step = 43800 (84.633 sec)
+2020-07-16 08:44:50.317260: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:44:50.317828: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:44:50.317914: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:44:50.317952: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:44:50.317990: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:44:50.318026: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:44:50.318066: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:44:50.318104: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:44:50.318134: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:44:50.318235: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:44:50.318793: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:44:50.319240: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:44:50.319288: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:44:50.319307: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:44:50.319319: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:44:50.319472: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:44:50.319980: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:44:50.320429: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.91s).
+Accumulating evaluation results...
+DONE (t=2.41s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.683
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.946
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.782
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.133
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.688
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.532
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.738
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.161
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.751
+INFO::Saving dict for global step 43811: DetectionBoxes_Precision/mAP = 0.6825004, DetectionBoxes_Precision/mAP (large) = 0.68757945, DetectionBoxes_Precision/mAP (medium) = 0.13336083, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9464034, DetectionBoxes_Precision/mAP@.75IOU = 0.7823342, DetectionBoxes_Recall/AR@1 = 0.5315375, DetectionBoxes_Recall/AR@10 = 0.73756945, DetectionBoxes_Recall/AR@100 = 0.74631053, DetectionBoxes_Recall/AR@100 (large) = 0.7514872, DetectionBoxes_Recall/AR@100 (medium) = 0.16066666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.3458726, Loss/localization_loss = 0.2102584, Loss/regularization_loss = 0.45806396, Loss/total_loss = 2.0141885, global_step = 43811, learning_rate = 0.008145061, loss = 2.0141885
+INFO::loss = 2.5863123, step = 43900 (298.059 sec)
+INFO::loss = 2.2535338, step = 44000 (85.248 sec)
+INFO::loss = 3.1819017, step = 44100 (87.838 sec)
+INFO::loss = 2.0224376, step = 44200 (83.252 sec)
+2020-07-16 08:54:50.023355: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:54:50.023923: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 08:54:50.024001: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 08:54:50.024040: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 08:54:50.024072: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 08:54:50.024099: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 08:54:50.024131: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 08:54:50.024165: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 08:54:50.024204: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 08:54:50.024296: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:54:50.024853: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:54:50.025327: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 08:54:50.025380: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 08:54:50.025402: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 08:54:50.025422: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 08:54:50.025579: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:54:50.026087: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 08:54:50.026567: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.94s).
+Accumulating evaluation results...
+DONE (t=1.97s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.675
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.942
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.763
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.153
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.679
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.528
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.737
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.746
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.193
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.751
+INFO::Saving dict for global step 44264: DetectionBoxes_Precision/mAP = 0.6745098, DetectionBoxes_Precision/mAP (large) = 0.67919576, DetectionBoxes_Precision/mAP (medium) = 0.15275179, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9421031, DetectionBoxes_Precision/mAP@.75IOU = 0.76319635, DetectionBoxes_Recall/AR@1 = 0.52802056, DetectionBoxes_Recall/AR@10 = 0.73659325, DetectionBoxes_Recall/AR@100 = 0.74571687, DetectionBoxes_Recall/AR@100 (large) = 0.75144166, DetectionBoxes_Recall/AR@100 (medium) = 0.19266666, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.4215182, Loss/localization_loss = 0.21352154, Loss/regularization_loss = 0.45824736, Loss/total_loss = 2.0932846, global_step = 44264, learning_rate = 0.008145061, loss = 2.0932846
+INFO::loss = 2.8682256, step = 44300 (299.430 sec)
+INFO::loss = 1.752707, step = 44400 (85.782 sec)
+INFO::loss = 2.273254, step = 44500 (86.623 sec)
+INFO::loss = 2.1376193, step = 44600 (85.453 sec)
+INFO::loss = 3.3934078, step = 44700 (85.862 sec)
+2020-07-16 09:04:50.634167: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:04:50.634965: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 09:04:50.635046: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 09:04:50.635082: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 09:04:50.635117: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 09:04:50.635149: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 09:04:50.635180: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 09:04:50.635210: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 09:04:50.635258: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 09:04:50.635385: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:04:50.635940: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:04:50.636389: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 09:04:50.636440: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 09:04:50.636460: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 09:04:50.636473: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 09:04:50.636634: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:04:50.637190: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:04:50.637681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.65s).
+Accumulating evaluation results...
+DONE (t=1.88s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.651
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.917
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.748
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.178
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.658
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.517
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.718
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.728
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.211
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.735
+INFO::Saving dict for global step 44714: DetectionBoxes_Precision/mAP = 0.6514963, DetectionBoxes_Precision/mAP (large) = 0.6578116, DetectionBoxes_Precision/mAP (medium) = 0.17831329, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9168683, DetectionBoxes_Precision/mAP@.75IOU = 0.7480721, DetectionBoxes_Recall/AR@1 = 0.5172972, DetectionBoxes_Recall/AR@10 = 0.7178722, DetectionBoxes_Recall/AR@100 = 0.72786313, DetectionBoxes_Recall/AR@100 (large) = 0.73481345, DetectionBoxes_Recall/AR@100 (medium) = 0.21066667, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.7900975, Loss/localization_loss = 0.2679235, Loss/regularization_loss = 0.45833734, Loss/total_loss = 2.5163617, global_step = 44714, learning_rate = 0.008145061, loss = 2.5163617
+INFO::loss = 2.3094893, step = 44800 (292.565 sec)
+INFO::loss = 2.6429226, step = 44900 (85.852 sec)
+INFO::loss = 2.4795685, step = 45000 (84.172 sec)
+INFO::loss = 2.375246, step = 45100 (87.184 sec)
+2020-07-16 09:14:51.294005: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:14:51.294616: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1640] Found device 0 with properties: 
+name: Tesla K80 major: 3 minor: 7 memoryClockRate(GHz): 0.8235
+pciBusID: 0000:00:1e.0
+2020-07-16 09:14:51.294680: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudart.so.10.0
+2020-07-16 09:14:51.294717: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcublas.so.10.0
+2020-07-16 09:14:51.294754: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcufft.so.10.0
+2020-07-16 09:14:51.294791: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcurand.so.10.0
+2020-07-16 09:14:51.294829: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusolver.so.10.0
+2020-07-16 09:14:51.294860: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcusparse.so.10.0
+2020-07-16 09:14:51.294889: I tensorflow/stream_executor/platform/default/dso_loader.cc:42] Successfully opened dynamic library libcudnn.so.7
+2020-07-16 09:14:51.294986: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:14:51.295525: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:14:51.295990: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1763] Adding visible gpu devices: 0
+2020-07-16 09:14:51.296038: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1181] Device interconnect StreamExecutor with strength 1 edge matrix:
+2020-07-16 09:14:51.296057: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1187]      0 
+2020-07-16 09:14:51.296078: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1200] 0:   N 
+2020-07-16 09:14:51.296231: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:14:51.296769: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:1005] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2020-07-16 09:14:51.297246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1326] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 9152 MB memory) -> physical GPU (device: 0, name: Tesla K80, pci bus id: 0000:00:1e.0, compute capability: 3.7)
+creating index...
+index created!
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+DONE (t=9.92s).
+Accumulating evaluation results...
+DONE (t=1.95s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.694
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.950
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.801
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.169
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.701
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.538
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.749
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.758
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.194
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.765
+INFO::Saving dict for global step 45172: DetectionBoxes_Precision/mAP = 0.69360113, DetectionBoxes_Precision/mAP (large) = 0.7006831, DetectionBoxes_Precision/mAP (medium) = 0.16936608, DetectionBoxes_Precision/mAP (small) = -1.0, DetectionBoxes_Precision/mAP@.50IOU = 0.9499206, DetectionBoxes_Precision/mAP@.75IOU = 0.8006652, DetectionBoxes_Recall/AR@1 = 0.53754306, DetectionBoxes_Recall/AR@10 = 0.74914694, DetectionBoxes_Recall/AR@100 = 0.7581281, DetectionBoxes_Recall/AR@100 (large) = 0.7651814, DetectionBoxes_Recall/AR@100 (medium) = 0.194, DetectionBoxes_Recall/AR@100 (small) = -1.0, Loss/classification_loss = 1.242879, Loss/localization_loss = 0.1900018, Loss/regularization_loss = 0.45856294, Loss/total_loss = 1.8914506, global_step = 45172, learning_rate = 0.008145061, loss = 1.8914506
+INFO::loss = 2.2174814, step = 45200 (297.447 sec)
+INFO::loss = 3.6240845, step = 45300 (87.104 sec)
+INFO::loss = 2.7817774, step = 45400 (84.168 sec)
+INFO::loss = 2.8840153, step = 45500 (86.488 sec)
+INFO::loss = 2.9460948, step = 45600 (85.340 sec)
